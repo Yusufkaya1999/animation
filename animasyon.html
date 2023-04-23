@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu1{
+         position: absolute;
+         width: 300px;
+         height: 30px;
+         border-radius: 15px;
+         background: #030202;
+         }
+        .ic1{
+         position: relative;
+         width: 30px;
+         height: 30px;
+         border-radius: 15px;
+         background: #ffff00;
+         animation-duration: 2s;
+         animation-name: ornek;
+         animation-direction:alternate-reverse ;
+         animation-iteration-count: 3;
+         }
+ 
+        @keyframes ornek{
+          0% {width: 30px;}
+          100% {width: 300px;}
+ 
+        }
+        .kutu2{
+         position: absolute;
+         padding: 2px;
+         width: 500px;
+         height: 50px;
+         border-radius: 20px;
+         background: #46e0f5;
+         border: 3px solid black;
+        }
+        .ic2{
+         position: relative;
+         width: 50px;
+         height: 50px;
+         border-radius: 20px;
+         background: #cf1212;
+         animation-duration: 2s;
+         animation-iteration-count: 3;
+         animation-name: ilerle;
+        }
+        @keyframes ilerle{
+         0%{
+           width: 50px;
+         }
+         100%{
+           width: 500px;
+         }
+ 
+        } 
+        .kutu3{
+         position: absolute;
+         width: 600px;
+         height: 60px;
+         border-radius: 20px;
+         background: #46e0f5;
+         border: 1px solid #000000;
+        }
+        .ic3{
+         position: relative;
+         width: 60px;
+         height: 60px;
+         padding: 2px;
+         border-radius: 20px;
+         background: #800080;
+         animation-name: tema;
+         animation-duration: 2s;
+         animation-iteration-count: infinite;
+        }
+        @keyframes tema {
+         0%{
+           width: 60px;
+         }
+         100%{
+           width: 600px;
+         }
+         
+        }
+        </style>
+</head>
+<body>
+    <h1>CSS ANİMASYON ÖZELLİKLERİ</h1><hr>
+    <div class="kutu1"><div class="ic1"></div></div><br><br>
+    <div class="kutu2"><div class="ic2"></div></div><br><br><br><br>
+    <div class="kutu3"><div class="ic3"></div></div>
+</body>
+</html>
